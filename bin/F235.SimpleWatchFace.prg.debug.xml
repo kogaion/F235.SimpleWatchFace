@@ -1,73 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="8" pc="268435456" symbol="initialize"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="9" pc="268435460" symbol="initialize"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="13" pc="268435479" symbol="onLayout"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="14" pc="268435483" symbol="onLayout"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="20" pc="268435521" symbol="onShow"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="24" pc="268435526" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="26" pc="268435530" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="27" pc="268435547" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="28" pc="268435621" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="29" pc="268435645" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="32" pc="268435659" symbol="onUpdate"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="38" pc="268435680" symbol="onHide"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="42" pc="268435685" symbol="onExitSleep"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="46" pc="268435690" symbol="onEnterSleep"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="5" pc="268435695" symbol="initialize"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="6" pc="268435699" symbol="initialize"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="10" pc="268435718" symbol="onStart"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="14" pc="268435723" symbol="onStop"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="18" pc="268435728" symbol="getInitialView"/>
-<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="19" pc="268435732" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="18" pc="268435770" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="20" pc="268435774" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="21" pc="268435937" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="22" pc="268435962" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="23" pc="268436014" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="26" pc="268436060" symbol="WatchFace"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="10" pc="268435456" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="12" pc="268435460" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="13" pc="268435480" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="14" pc="268435490" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="17" pc="268435514" symbol="draw"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="19" pc="268435518" symbol="draw"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="20" pc="268435532" symbol="draw"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="24" pc="268435550" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="28" pc="268435555" symbol="needsUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="30" pc="268435559" symbol="needsUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Updatable.mc" lineNum="33" pc="268435563" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="11" pc="268435568" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="13" pc="268435572" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="20" pc="268435591" symbol="onLayout"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="22" pc="268435595" symbol="onLayout"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="27" pc="268435633" symbol="onShow"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="29" pc="268435637" symbol="onShow"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="30" pc="268435669" symbol="onShow"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="42" pc="268435702" symbol="onUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="44" pc="268435706" symbol="onUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="45" pc="268435740" symbol="onUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="49" pc="268435775" symbol="onHide"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="54" pc="268435780" symbol="onExitSleep"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceView.mc" lineNum="59" pc="268435785" symbol="onEnterSleep"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="5" pc="268435790" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="6" pc="268435794" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="10" pc="268435813" symbol="onStart"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="14" pc="268435818" symbol="onStop"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="18" pc="268435823" symbol="getInitialView"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\F235SimpleWatchFaceApp.mc" lineNum="19" pc="268435827" symbol="getInitialView"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="10" pc="268435865" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="12" pc="268435869" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="15" pc="268435890" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="17" pc="268435894" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="18" pc="268435903" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="21" pc="268435913" symbol="needsUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="23" pc="268435917" symbol="needsUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="24" pc="268435934" symbol="needsUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="27" pc="268435976" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="29" pc="268435980" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="30" pc="268435997" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="31" pc="268436013" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="33" pc="268436029" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="34" pc="268436043" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="35" pc="268436057" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="36" pc="268436071" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="37" pc="268436085" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="39" pc="268436099" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="40" pc="268436115" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="48" pc="268436216" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\ClockTime.mc" lineNum="49" pc="268436232" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="9" pc="268436334" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="11" pc="268436338" symbol="initialize"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="14" pc="268436359" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="16" pc="268436363" symbol="onReset"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="19" pc="268436377" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="21" pc="268436381" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="24" pc="268436394" symbol="drawUpdate"/>
+<entry filename="D:\\Lucian\\workspace\\F235.SimpleWatchFace\\source\\Background.mc" lineNum="25" pc="268436430" symbol="drawUpdate"/>
+<entry filename="Rez" lineNum="18" pc="268436443" symbol="SimpleWatchFace"/>
+<entry filename="Rez" lineNum="20" pc="268436447" symbol="SimpleWatchFace"/>
+<entry filename="Rez" lineNum="21" pc="268436490" symbol="SimpleWatchFace"/>
+<entry filename="Rez" lineNum="24" pc="268436533" symbol="SimpleWatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389124" method="true" symbol="onUpdate"/>
-<entry id="8389349" symbol="justification"/>
 <entry field="true" id="8388611" symbol="Toybox"/>
+<entry id="14" symbol="drawUpdate"/>
 <entry id="8388770" module="true" symbol="Strings"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="20" symbol="resetLayout"/>
+<entry id="8389068" method="true" symbol="draw"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388640" symbol="Lang"/>
 <entry id="8388769" module="true" symbol="Rez"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry id="8" object="true" symbol="F235SimpleWatchFaceView"/>
+<entry id="9" object="true" symbol="F235SimpleWatchFaceView"/>
+<entry id="13" method="true" symbol="onReset"/>
+<entry id="8" object="true" symbol="Updatable"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="13" symbol="AppName"/>
-<entry id="8389375" method="true" symbol="WatchFace"/>
-<entry field="true" id="12" symbol="LauncherIcon"/>
+<entry field="true" id="19" symbol="AppName"/>
+<entry id="11" object="true" symbol="Background"/>
+<entry field="true" id="17" symbol="LauncherIcon"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry id="8389065" symbol="locY"/>
-<entry id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" symbol="Drawables"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="22" symbol="settings"/>
+<entry id="24" symbol="clockHour"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
-<entry id="8389348" symbol="font"/>
-<entry id="8389347" symbol="color"/>
-<entry id="11" module="true" symbol="Layouts"/>
+<entry id="8388709" object="true" symbol="ClockTime"/>
+<entry id="21" symbol="params"/>
+<entry id="25" symbol="clockMin"/>
+<entry id="16" module="true" symbol="Layouts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry id="8389063" symbol="identifier"/>
-<entry id="10" module="true" symbol="Menus"/>
-<entry id="9" object="true" symbol="F235SimpleWatchFaceApp"/>
+<entry id="15" module="true" symbol="Menus"/>
+<entry id="10" object="true" symbol="F235SimpleWatchFaceApp"/>
 <entry id="8388772" module="true" symbol="Fonts"/>
+<entry id="12" symbol="drawBg"/>
+<entry id="18" method="true" symbol="SimpleWatchFace"/>
+<entry id="23" symbol="needsUpdate"/>
 </symbolTable>
 <localVars>
-<entry endPc="268435679" name="view" stackId="4" startPc="268435530"/>
-<entry endPc="268435679" name="timeString" stackId="3" startPc="268435530"/>
-<entry endPc="268435679" name="clockTime" stackId="2" startPc="268435530"/>
-<entry endPc="268436077" name="rez_cmp_local_bitmap_TimeLabel" stackId="2" startPc="268435774"/>
-<entry endPc="268436077" name="rez_cmp_local_bitmap_TimeLabel_fontHeight" stackId="3" startPc="268435774"/>
+<entry endPc="268435975" name="clockTime" stackId="1" startPc="268435917"/>
+<entry endPc="268436333" name="minColor" stackId="5" startPc="268435980"/>
+<entry endPc="268436333" name="hourColor" stackId="3" startPc="268435980"/>
+<entry endPc="268436333" name="minFont" stackId="6" startPc="268435980"/>
+<entry endPc="268436333" name="hourFont" stackId="4" startPc="268435980"/>
+<entry endPc="268436333" name="bgColor" stackId="7" startPc="268435980"/>
+<entry endPc="268436333" name="clockTime" stackId="2" startPc="268435980"/>
+<entry endPc="268436560" name="rez_cmp_local_custom_drawable_Background" stackId="2" startPc="268436447"/>
+<entry endPc="268436560" name="rez_cmp_local_custom_drawable_ClockTime" stackId="3" startPc="268436447"/>
 </localVars>
 <annotations/>
 <functions>
+<functionEntry name="initialize" parent="Updatable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="draw" parent="Updatable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onReset" parent="Updatable">
+<documentation/>
+</functionEntry>
+<functionEntry name="needsUpdate" parent="Updatable">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawUpdate" parent="Updatable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
 <functionEntry name="initialize" parent="F235SimpleWatchFaceView">
 <documentation/>
 </functionEntry>
@@ -105,7 +172,32 @@
 <functionEntry name="getInitialView" parent="F235SimpleWatchFaceApp">
 <documentation/>
 </functionEntry>
-<functionEntry name="WatchFace" parent="Layouts">
+<functionEntry name="initialize" parent="ClockTime">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onReset" parent="ClockTime">
+<documentation/>
+</functionEntry>
+<functionEntry name="needsUpdate" parent="ClockTime">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawUpdate" parent="ClockTime">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="Background">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onReset" parent="Background">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawUpdate" parent="Background">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="SimpleWatchFace" parent="Layouts">
 <param id="dc"/>
 <documentation><![CDATA[<div class="description"> Draw the layout<br/> param The context<br/></div>]]></documentation>
 </functionEntry>
