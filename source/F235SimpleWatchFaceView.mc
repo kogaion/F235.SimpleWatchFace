@@ -6,7 +6,7 @@ using Toybox.Application as App;
 
 class F235SimpleWatchFaceView extends Ui.WatchFace
 {
-    hidden var resetLayout = 0;
+    hidden var drawables;
 
     function initialize()
     {
@@ -20,14 +20,16 @@ class F235SimpleWatchFaceView extends Ui.WatchFace
     function onLayout(dc)
     {
         setLayout(Rez.Layouts.SimpleWatchFace(dc));
+        me.drawables = ["Background", "ClockTime", "CalendarDate"];
     }
 
     // When the View is brought into the foreground, onShow() is called.
     // @return [Boolean] true if handled, false otherwise
     function onShow()
     {
-        WatchFace.findDrawableById("Background").onReset();
-        WatchFace.findDrawableById("ClockTime").onReset();
+        for (var i = 0; i < me.drawables.size(); i ++) {
+            WatchFace.findDrawableById(me.drawables[i]).onReset();
+        }
     }
 
     // When a View is active, onUpdate() is used to update dynamic content.
@@ -41,8 +43,9 @@ class F235SimpleWatchFaceView extends Ui.WatchFace
     // @return [Boolean] true if handled, false otherwise
     function onUpdate(dc)
     {
-        WatchFace.findDrawableById("Background").draw(dc);
-        WatchFace.findDrawableById("ClockTime").draw(dc);
+        for (var i = 0; i < me.drawables.size(); i ++) {
+            WatchFace.findDrawableById(me.drawables[i]).draw(dc);
+        }
     }
 
     // Before the View is removed from the foreground, onHide() is called.
