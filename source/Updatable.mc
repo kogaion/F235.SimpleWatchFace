@@ -7,15 +7,19 @@ class Updatable extends Ui.Drawable
     hidden var params;
     hidden var settings;
 
-    hidden var offsetTop = 28;
-    hidden var offsetCenter = 67;
-
     function initialize(params)
     {
         Drawable.initialize(params);
 
         me.params = params;
-        me.settings = Sys.getDeviceSettings();
+
+        var systemSettings = Sys.getDeviceSettings();
+        me.settings = {
+            "screenWidth"   => systemSettings.screenWidth,
+            "screenHeight"  => systemSettings.screenHeight,
+            "offsetTop"     => 28,
+            "offsetCenter"  => 67
+        };
     }
 
     function draw(dc)

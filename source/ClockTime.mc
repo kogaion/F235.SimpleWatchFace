@@ -38,8 +38,8 @@ class ClockTime extends Updatable
 
         dc.setColor(hourColor, bgColor);
         dc.drawText(
-            me.settings.screenWidth / 2,
-            me.settings.screenHeight / 2,
+            me.settings["screenWidth"] / 2,
+            me.settings["screenHeight"] / 2,
             hourFont,
             me.clockHour.format("%02d"),
             Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER
@@ -47,8 +47,8 @@ class ClockTime extends Updatable
 
         dc.setColor(minColor, bgColor);
         dc.drawText(
-            me.settings.screenWidth / 2,
-            me.settings.screenHeight / 2,
+            me.settings["screenWidth"] / 2,
+            me.settings["screenHeight"] / 2,
             minFont,
             me.clockMin.format("%02d"),
             Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER

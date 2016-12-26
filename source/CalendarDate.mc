@@ -38,8 +38,8 @@ class CalendarDate extends Updatable
 
         dc.setColor(fgColor, bgColor);
         dc.drawText(
-            me.settings.screenWidth / 2,
-            me.settings.screenHeight - me.offsetTop,
+            me.settings["screenWidth"] / 2,
+            me.settings["screenHeight"] - me.settings["offsetTop"],
             font,
             date.day_of_week + ", " + date.month + " " + date.day,
             Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER
