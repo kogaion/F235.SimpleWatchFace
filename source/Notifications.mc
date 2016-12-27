@@ -6,7 +6,9 @@ using Toybox.WatchUi as Ui;
 class Notifications extends Updatable
 {
     hidden var notifCount;
-    hidden var notifFont;
+    hidden var notifIconFont;
+
+    const MAX_NOTIF_COUNT = 99;
 
     function initialize(params)
     {
@@ -16,20 +18,6 @@ class Notifications extends Updatable
     function onReset()
     {
         me.notifCount = null;
-    }
-
-    hidden function getNotifCount()
-    {
-        var settings = Sys.getDeviceSettings();
-        return settings.notificationCount;
-    }
-
-    hidden function getNotifFont()
-    {
-        if (me.notifFont == null) {
-            me.notifFont = Ui.loadResource(Rez.Fonts.briefcase);
-        }
-        return me.notifFont;
     }
 
     hidden function needsUpdate()
@@ -42,30 +30,66 @@ class Notifications extends Updatable
         me.notifCount = me.getNotifCount();
 
         var notifColor = (me.notifCount) ? Gfx.COLOR_ORANGE : Gfx.COLOR_DK_GRAY;
+        var notifCountFont = Gfx.FONT_XTINY;
+
         var bgColor = Gfx.COLOR_BLACK;
 
-        var notifFont = me.getNotifFont();
-        var notifText = "0";
+        var notifIconFont = me.getNotifIconFont();
+        var notifIconText = "0";
 
+        // clear the area
+        var textDimensions = dc.getTextDimensions(" " + me.MAX_NOTIF_COUNT, notifCountFont);
+        var iconDimensions = dc.getTextDimensions(notifIconText, notifIconFont);
+        var areaWidth = textDimensions[0] + iconDimensions[0];
+        var areaHeight = textDimensions[1] > iconDimensions[1] ? textDimensions[1] : iconDimensions[1];
+        dc.setColor(bgColor, bgColor);
+        dc.fillRectangle(
+            me.settings["screenWidth"] / 2 - me.settings["offsetCenter"],
+            me.settings["offsetTop"] - areaHeight / 2 - 1,
+            areaWidth + 2,
+            areaHeight + 2
+        );
+
+        // draw the icon
         dc.setColor(notifColor, bgColor);
         dc.drawText(
             me.settings["screenWidth"] / 2 - me.settings["offsetCenter"],
             me.settings["offsetTop"],
-            notifFont,
-            notifText,
-            Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER
+            notifIconFont,
+            notifIconText,
+            Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER
         );
 
+        // draw the notifications count
         if (me.notifCount) {
-            var notifWidth = dc.getTextWidthInPixels(notifText, me.notifFont);
-            var notifCountFont = Gfx.FONT_XTINY;
+            var notifWidth = dc.getTextWidthInPixels(notifIconText, me.notifIconFont);
+
             dc.drawText(
                 me.settings["screenWidth"] / 2 - me.settings["offsetCenter"] + notifWidth,
                 me.settings["offsetTop"],
                 notifCountFont,
-                "" + notifCount,
+                " " + notifCount,
                 Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER
             );
         }
+    }
+
+    hidden function getNotifCount()
+    {
+        var settings = Sys.getDeviceSettings();
+        var notifCount = settings.notificationCount;
+
+        // show max MAX_NOTIF_COUNT
+        notifCount = (notifCount > me.MAX_NOTIF_COUNT) ? me.MAX_NOTIF_COUNT : notifCount;
+
+        return notifCount;
+    }
+
+    hidden function getNotifIconFont()
+    {
+        if (me.notifIconFont == null) {
+            me.notifIconFont = Ui.loadResource(Rez.Fonts.briefcase);
+        }
+        return me.notifIconFont;
     }
 }

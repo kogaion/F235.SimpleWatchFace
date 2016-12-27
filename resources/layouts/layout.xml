@@ -1,10 +1,11 @@
 <layout id="SimpleWatchFace">
-    <!-- -->
-    <drawable id="Background" class="Background" />
-    <drawable id="ClockTime" class="ClockTime" />
-    <drawable id="CalendarDate" class="CalendarDate" />
-    <drawable id="StepsGoal" class="StepsGoal" />    
-    <drawable id="Bluetooth" class="Bluetooth" />
-    <drawable id="Notifications" class="Notifications" />
-    <!-- -->  
+	<!-- -->
+	<drawable id="Background" class="Background" />
+	<drawable id="ClockTime" class="ClockTime" />
+	<drawable id="CalendarDate" class="CalendarDate" />
+	<drawable id="StepsGoal" class="StepsGoal" />
+	<drawable id="Bluetooth" class="Bluetooth" />
+	<drawable id="Notifications" class="Notifications" />
+	<drawable id="Battery" class="Battery" />
+	<!-- -->
 </layout>

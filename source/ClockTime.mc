@@ -20,13 +20,13 @@ class ClockTime extends Updatable
 
     hidden function needsUpdate()
     {
-        var clockTime = Sys.getClockTime();
+        var clockTime = getTime();
         return ((me.clockHour != clockTime.hour) || (me.clockMin != clockTime.min));
     }
 
     hidden function drawUpdate(dc)
     {
-        var clockTime = Sys.getClockTime();
+        var clockTime = getTime();
         me.clockHour = clockTime.hour;
         me.clockMin = clockTime.min;
 
@@ -53,5 +53,10 @@ class ClockTime extends Updatable
             me.clockMin.format("%02d"),
             Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER
         );
+    }
+
+    hidden function getTime()
+    {
+        return Sys.getClockTime();
     }
 }

@@ -21,13 +21,13 @@ class CalendarDate extends Updatable
 
     hidden function needsUpdate()
     {
-        var date = Greg.info(Time.now(), Time.FORMAT_MEDIUM);
+        var date = me.getDate();
         return ((date.year != me.year) || (date.month != me.month) || (date.day != me.day));
     }
 
     hidden function drawUpdate(dc)
     {
-        var date = Greg.info(Time.now(), Time.FORMAT_MEDIUM);
+        var date = me.getDate();
         me.year = date.year;
         me.month = date.month;
         me.day = date.day;
@@ -44,5 +44,10 @@ class CalendarDate extends Updatable
             date.day_of_week + ", " + date.month + " " + date.day,
             Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER
         );
+    }
+
+    hidden function getDate()
+    {
+        return Greg.info(Time.now(), Time.FORMAT_MEDIUM);
     }
 }

@@ -24,19 +24,6 @@ class Bluetooth extends Updatable
         return settings.phoneConnected;
     }
 
-    hidden function getBthFont()
-    {
-        if (me.bthFont == null) {
-            me.bthFont = Ui.loadResource(Rez.Fonts.bluetooth);
-        }
-        return me.bthFont;
-    }
-
-    hidden function needsUpdate()
-    {
-        return (me.bthStatus != me.getBthStatus());
-    }
-
     hidden function drawUpdate(dc)
     {
         me.bthStatus = me.getBthStatus();
@@ -52,7 +39,20 @@ class Bluetooth extends Updatable
             me.settings["screenHeight"] - me.settings["offsetTop"],
             bthFont,
             "0",
-            Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER
+            Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_VCENTER
         );
+    }
+
+    hidden function getBthFont()
+    {
+        if (me.bthFont == null) {
+            me.bthFont = Ui.loadResource(Rez.Fonts.bluetooth);
+        }
+        return me.bthFont;
+    }
+
+    hidden function needsUpdate()
+    {
+        return (me.bthStatus != me.getBthStatus());
     }
 }
