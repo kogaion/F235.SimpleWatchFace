@@ -4,5 +4,7 @@
     <drawable id="ClockTime" class="ClockTime" />
     <drawable id="CalendarDate" class="CalendarDate" />
     <drawable id="StepsGoal" class="StepsGoal" />    
+    <drawable id="Bluetooth" class="Bluetooth" />
+    <drawable id="Notifications" class="Notifications" />
     <!-- -->  
 </layout>

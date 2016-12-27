@@ -20,7 +20,7 @@ class F235SimpleWatchFaceView extends Ui.WatchFace
     function onLayout(dc)
     {
         setLayout(Rez.Layouts.SimpleWatchFace(dc));
-        me.drawables = ["Background", "ClockTime", "CalendarDate", "StepsGoal"];
+        me.drawables = ["Background", "ClockTime", "CalendarDate", "StepsGoal", "Bluetooth", "Notifications"];
     }
 
     // When the View is brought into the foreground, onShow() is called.

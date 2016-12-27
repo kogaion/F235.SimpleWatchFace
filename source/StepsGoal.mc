@@ -45,11 +45,13 @@ class StepsGoal extends Updatable
 
         var bgColor = Gfx.COLOR_BLACK;
 
+        var stepsFont = me.getStepsFont();
+
         dc.setColor(stepsColor, bgColor);
         dc.drawText(
             me.settings["screenWidth"] / 2 + me.settings["offsetCenter"],
             me.settings["screenHeight"] - me.settings["offsetTop"],
-            me.getStepsFont(),
+            stepsFont,
             "0",
             Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_VCENTER
         );
