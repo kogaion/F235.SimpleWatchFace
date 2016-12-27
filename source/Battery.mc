@@ -5,11 +5,11 @@ using Toybox.WatchUi as Ui;
 
 class Battery extends Updatable
 {
-    hidden var batteryPercent;
-    hidden var batteryIconFont;
-
     const MAX_BATTERY_PERCENT = 99;
     const MAX_BATTERY_ICON = "9";
+
+    hidden var batteryPercent;
+    hidden var batteryIconFont;
 
     function initialize(params)
     {

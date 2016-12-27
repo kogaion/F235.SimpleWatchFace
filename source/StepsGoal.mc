@@ -3,9 +3,12 @@ using Toybox.Graphics as Gfx;
 using Toybox.Application as App;
 using Toybox.ActivityMonitor as Act;
 using Toybox.WatchUi as Ui;
+using Toybox.Math as Math;
 
 class StepsGoal extends Updatable
 {
+    const MAX_STEPS_GOAL = 4;
+
     hidden var stepsGoal;
     hidden var stepsFont;
 
@@ -21,23 +24,21 @@ class StepsGoal extends Updatable
 
     hidden function needsUpdate()
     {
-        var steps = me.getStepsGoal();
-        return (me.stepsGoal != steps);
+        return (me.stepsGoal != me.getStepsGoal());
     }
 
     hidden function drawUpdate(dc)
     {
-        var steps = me.getStepsGoal();
-        me.stepsGoal = steps;
+        me.stepsGoal = me.getStepsGoal();
 
         var stepsColor = null;
-        if (me.stepsGoal >= 4) {
+        if (me.stepsGoal >= me.MAX_STEPS_GOAL) {
             stepsColor = Gfx.COLOR_GREEN;
-        } else if (me.stepsGoal == 3) {
+        } else if (me.stepsGoal >= 3) {
             stepsColor = Gfx.COLOR_BLUE;
-        } else if (me.stepsGoal == 2) {
+        } else if (me.stepsGoal >= 2) {
             stepsColor = Gfx.COLOR_ORANGE;
-        } else if (me.stepsGoal == 1) {
+        } else if (me.stepsGoal >= 1) {
             stepsColor = Gfx.COLOR_RED;
         } else {
             stepsColor = Gfx.COLOR_DK_GRAY;
@@ -60,11 +61,23 @@ class StepsGoal extends Updatable
     hidden function getStepsGoal()
     {
         var info = Act.getInfo();
-        var stepsGoal = info.stepGoal;
+        var goal = info.stepGoal;
         var steps = info.steps;
 
-        var ratio = 100.0 * steps / stepsGoal;
-        return (ratio.toLong() % 25);
+        if (goal == 0 || steps == 0) {
+            return 0;
+        }
+
+        if (steps >= goal) {
+            return me.MAX_STEPS_GOAL;
+        }
+
+        var ratio = 100.0 * steps / goal;
+        if (ratio == 0) {
+            return 0;
+        }
+
+        return (Math.floor(ratio / 25)).toLong();
     }
 
     hidden function getStepsFont()

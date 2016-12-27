@@ -5,10 +5,10 @@ using Toybox.WatchUi as Ui;
 
 class Notifications extends Updatable
 {
+    const MAX_NOTIF_COUNT = 99;
+
     hidden var notifCount;
     hidden var notifIconFont;
-
-    const MAX_NOTIF_COUNT = 99;
 
     function initialize(params)
     {
