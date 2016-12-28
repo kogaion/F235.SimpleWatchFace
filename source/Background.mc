@@ -16,12 +16,17 @@ class Background extends Updatable
         me.drawBg = 1;
     }
 
+    hidden function needsUpdate()
+    {
+        return me.drawBg == 1;
+    }
+
     hidden function drawUpdate(dc)
     {
         me.drawBg = 0;
 
         // Set the background color then call to clear the screen
-        dc.setColor(Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK);
+        dc.setColor(Gfx.COLOR_TRANSPARENT, me.settings["bgColor"]);
         dc.clear();
     }
 }

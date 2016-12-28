@@ -44,7 +44,7 @@ class StepsGoal extends Updatable
             stepsColor = Gfx.COLOR_DK_GRAY;
         }
 
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
 
         var stepsFont = me.getStepsFont();
 

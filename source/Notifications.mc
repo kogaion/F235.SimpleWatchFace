@@ -32,7 +32,7 @@ class Notifications extends Updatable
         var notifColor = (me.notifCount) ? Gfx.COLOR_ORANGE : Gfx.COLOR_DK_GRAY;
         var notifCountFont = Gfx.FONT_XTINY;
 
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
 
         var notifIconFont = me.getNotifIconFont();
         var notifIconText = "0";

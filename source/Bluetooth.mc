@@ -29,7 +29,7 @@ class Bluetooth extends Updatable
         me.bthStatus = me.getBthStatus();
 
         var bthColor = (me.bthStatus) ? Gfx.COLOR_ORANGE : Gfx.COLOR_DK_GRAY;
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
 
         var bthFont = me.getBthFont();
 

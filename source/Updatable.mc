@@ -1,6 +1,7 @@
 using Toybox.WatchUi as Ui;
 using Toybox.System as Sys;
 using Toybox.Application as App;
+using Toybox.Graphics as Gfx;
 
 class Updatable extends Ui.Drawable
 {
@@ -18,7 +19,8 @@ class Updatable extends Ui.Drawable
             "screenWidth"   => systemSettings.screenWidth,
             "screenHeight"  => systemSettings.screenHeight,
             "offsetTop"     => 28,
-            "offsetCenter"  => 67
+            "offsetCenter"  => 67,
+            "bgColor"       => Gfx.COLOR_BLACK
         };
     }
 

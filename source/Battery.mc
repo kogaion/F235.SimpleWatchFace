@@ -38,7 +38,7 @@ class Battery extends Updatable
         var batteryIconColor = (me.batteryPercent <= 10) ? Gfx.COLOR_RED : Gfx.COLOR_WHITE;
         me.batteryIconFont = me.getBatteryIconFont();
 
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
 
         // clear the area
         var textDimensions = dc.getTextDimensions(" " + me.MAX_BATTERY_PERCENT.toNumber().format("%02d") + "%", batteryPercentFont);

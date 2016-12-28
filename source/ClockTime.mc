@@ -34,7 +34,7 @@ class ClockTime extends Updatable
         var hourFont = Gfx.FONT_NUMBER_THAI_HOT; // me.params.get(:hourFont);
         var minColor = Gfx.COLOR_ORANGE; // me.params.get(:minColor);
         var minFont = Gfx.FONT_NUMBER_THAI_HOT; // me.params.get(:minFont);
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
 
         dc.setColor(hourColor, bgColor);
         dc.drawText(

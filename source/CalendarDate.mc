@@ -33,7 +33,7 @@ class CalendarDate extends Updatable
         me.day = date.day;
 
         var fgColor = Gfx.COLOR_WHITE;
-        var bgColor = Gfx.COLOR_BLACK;
+        var bgColor = me.settings["bgColor"];
         var font = Gfx.FONT_XTINY;
 
         dc.setColor(fgColor, bgColor);
