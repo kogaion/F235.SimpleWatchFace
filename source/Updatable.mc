@@ -19,7 +19,7 @@ class Updatable extends Ui.Drawable
             "screenWidth"   => systemSettings.screenWidth,
             "screenHeight"  => systemSettings.screenHeight,
             "offsetTop"     => 28,
-            "offsetCenter"  => 75,
+            "offsetCenter"  => 70,
             "bgColor"       => Gfx.COLOR_BLACK
         };
     }
