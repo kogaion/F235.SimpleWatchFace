@@ -45,7 +45,6 @@ class StepsGoal extends Updatable
         }
 
         var bgColor = me.settings["bgColor"];
-
         var stepsFont = me.getStepsFont();
 
         dc.setColor(stepsColor, bgColor);

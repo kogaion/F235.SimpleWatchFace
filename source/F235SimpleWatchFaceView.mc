@@ -23,7 +23,8 @@ class F235SimpleWatchFaceView extends Ui.WatchFace
         me.drawables = [
             "Background",
             "Battery", "ClockTime", "CalendarDate",
-            "StepsGoal", "Bluetooth", "Notifications"
+            "StepsGoal", "Bluetooth", "Notifications",
+            "HeartRate"
         ];
     }
 
