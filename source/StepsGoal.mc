@@ -83,7 +83,7 @@ class StepsGoal extends Updatable
     hidden function getStepsFont()
     {
         if (me.stepsFont == null) {
-            me.stepsFont = Ui.loadResource(Rez.Fonts.heart);
+            me.stepsFont = Ui.loadResource(Rez.Fonts.footsteps);
         }
 
         return me.stepsFont;

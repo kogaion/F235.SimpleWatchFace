@@ -2,5 +2,6 @@
 	<font id="heart" filename="fonts/heart.fnt" filter="0" />
 	<font id="bluetooth" filename="fonts/bluetooth.fnt" filter="0" />
 	<font id="briefcase" filename="fonts/briefcase.fnt" filter="0" />
+	<font id="footsteps" filename="fonts/footsteps.fnt" filter="0" />
 	<font id="battery" filename="fonts/battery.fnt" filter="013579" />
 </resources>

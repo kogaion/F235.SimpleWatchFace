@@ -7,5 +7,6 @@
 	<drawable id="Bluetooth" class="Bluetooth" />
 	<drawable id="Notifications" class="Notifications" />
 	<drawable id="Battery" class="Battery" />
+	<drawable id="HeartRate" class="HeartRate" />
 	<!-- -->
 </layout>
