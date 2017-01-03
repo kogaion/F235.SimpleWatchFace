@@ -28,6 +28,7 @@ class HeartRate extends Updatable
     hidden function drawUpdate(dc)
     {
         me.heartRate = me.getHeartRate();
+        //Sys.println("hr: " + me.heartRate);
 
         var hrColor = null;
         if (me.heartRate >= 165) {
@@ -57,20 +58,26 @@ class HeartRate extends Updatable
 
     hidden function getHeartRate()
     {
-        var iterator = Act.getHeartRateHistory(10, true);
-        while (true) {
-            var sample = iterator.next();
-            if (sample.heartRate == Act.INVALID_HR_SAMPLE) {
-                continue;
-            }
-            var age = Time.now().subtract(sample.when).value();
-            if (age > 60) {
-                break;
-            }
-
-            return sample.heartRate;
+        if (!(Act has :HeartRateIterator)) {
+            //Sys.println("no hri");
+            return null;
         }
-        return 0;
+
+        var iterator = Act.getHeartRateHistory(1, true);
+        var sample = iterator.next();
+
+        if (sample == null || sample.heartRate == null || sample.heartRate == Act.INVALID_HR_SAMPLE) {
+            //Sys.println("invalid" + sample.heartRate);
+            return 0;
+        }
+
+        var age = Time.now().subtract(sample.when).value();
+        if (age > 180) {
+            //Sys.println("old age" + age);
+            return 0;
+        }
+
+        return sample.heartRate;
     }
 
     hidden function getHeartRateFont()
